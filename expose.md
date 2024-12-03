@@ -127,6 +127,20 @@ export class HomePage {
 
 ---
 
+### ** Synchronisez les modifications avec votre appareil**
+- Si vous testez directement sur un appareil physique ou un émulateur, les changements dans le code ne sont pas automatiquement mis à jour. Vous devez reconstruire le projet et synchroniser les fichiers. Exécutez :  
+  ```bash
+  ionic build
+  ionic capacitor copy android
+  ionic capacitor sync
+  ```
+- Ensuite, ouvrez votre projet dans Android Studio (`android/`) et déployez-le à nouveau sur l’appareil.
+
+---
+
+
+---
+
 ### **Limitations d'Ionic**  
 1. **Performance** : Les applications Ionic peuvent être légèrement moins rapides que les applications natives pour des fonctionnalités complexes.  
 2. **Dépendance à WebView** : Cela peut poser problème pour des performances graphiques exigeantes (ex. : jeux).  
